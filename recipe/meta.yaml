@@ -12,6 +12,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
 
 requirements:
   host:
@@ -20,7 +21,6 @@ requirements:
   run:
     - python
     - marshmallow >=2.0.0
-    - enum34  # [py<34]
 
 test:
   requires:
